@@ -4,7 +4,7 @@ I build quantitative trading systems and machine learning pipelines. My work spa
 
 ---
 
-## Quantitative Trading
+## Quantitative Research
 
 | Project | Description |
 |---------|-------------|
