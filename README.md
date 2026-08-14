@@ -10,7 +10,7 @@ I build quantitative trading systems and machine learning pipelines. My work spa
 |---------|-------------|
 | [Kalshi_Prediction_Soccer](https://github.com/Brianlee7281/Kalshi_Prediction_Soccer) | Real-time MMPP pricing engine for soccer prediction markets. Regime-switching Poisson model with sub-second execution, Monte Carlo pricing, and Kelly-optimal sizing on Kalshi. |
 | [Systematic Equity Trading System](https://github.com/Brianlee7281/Systematic-Equity-Trading-System) | Multi-strategy equity system combining residual momentum and mean reversion with HMM + XGBoost regime detection across a 7-layer architecture. |
-| [VRP Trading System](https://github.com/Brianlee7281/VRP-Trading-System) | Harvests the Variance Risk Premium by selling SPX put credit spreads, governed by HMM regime conditioning and multi-layer risk management. |
+
 
 ## Machine Learning & Deep Learning
 
