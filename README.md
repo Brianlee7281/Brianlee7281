@@ -2,44 +2,60 @@
 
 # Hi, I'm Brian 👋
 
-### Quantitative Research · Software Engineering · Data Science / MLE
+### Trading Systems · Game Development · Machine Learning
 
-I build quantitative trading systems, simulation software, and machine-learning pipelines—with a focus on turning statistical ideas into reliable, real-world decision engines.
+I build quantitative trading infrastructure, simulation-heavy games, and machine-learning pipelines—with an emphasis on robust systems, reproducible experiments, and models that work outside a notebook.
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](#tech-stack)
+[![C++](https://img.shields.io/badge/C++20-00599C?style=flat-square&logo=cplusplus&logoColor=white)](#tech-stack)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](#tech-stack)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](#tech-stack)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)](#tech-stack)
 
 </div>
 
 ---
 
-## Latest Work
+## C++ & Game Development
 
-| Project | Area | What I'm Building |
-|---|---|---|
-| [PM-BTC](https://github.com/Brianlee7281/PM-BTC) | **Quant · SWE** | Research-to-execution system for short-horizon BTC markets: causal backtests, streaming market data, post-only execution, risk gates, position recovery, deployment services, and execution-quality audits. |
-| **Spit** *(in development)* | **SWE · Simulation** | Top-down bullet-heaven roguelite with a data-driven hook system, deterministic fixed-timestep simulation, generic spitter architecture, deferred lifecycle queues, object pooling, spatial hashing, and bounded recursive effects. |
-| [EPGP Research](https://github.com/Brianlee7281/EPGP-Research) | **Quant · Scientific ML** | Reimplementation of Gaussian processes constrained by linear PDEs, including heat/wave experiments and a Black–Scholes-to-heat-equation pricing pipeline. |
+### OrbitFall · `2026` · in development
 
-## Quantitative Research
+> A geometry-driven, top-down survivors-like where orbiting weapon nodes form links and fields—and the geometry itself becomes the weapon.
+
+- Built in **C++20** with **SDL3**, CMake, ImGui, and data-driven JSON configuration
+- Generic combat graph composed of nodes, ports, edges, cycles, and fields
+- Deterministic fixed-step simulation with bounded pools and spatial-hash collision
+- Ordered event, reaction, effect-intent, and resolution pipelines
+- Graph-aware build construction with modular motion, trigger, payload, and geometry components
+- Dedicated parity, determinism, soak, allocation, combat, and visual-state tests
+
+`C++20` `SDL3` `CMake` `Catch2` `ImGui` `Deterministic simulation`
+
+### Spit · `2026` · in development
+
+> A top-down bullet-heaven roguelite built around item combinations that create emergent, screen-breaking behavior.
+
+- TypeScript/Canvas 2D implementation without a game engine
+- Data-driven, priority-ordered hook system for composable item behavior
+- Shared `Spitter` interface for players, converted enemies, allies, and future clones
+- Seeded fixed-timestep simulation with deferred spawn and lifecycle queues
+- Object pooling, spatial hashing, recursive-depth caps, and per-frame spawn budgets
+- Headless deterministic scenarios and permanent runtime instrumentation
+
+`TypeScript` `Canvas 2D` `Vite` `Seeded RNG` `Object pooling` `Spatial hashing`
+
+## Trading & Quantitative Projects
 
 | Project | Description |
 |---|---|
-| [PM-BTC](https://github.com/Brianlee7281/PM-BTC) | Short-horizon quantitative research and production execution stack with causality-safe backtesting, maker-fill analysis, live risk controls, and strategy-to-live parity audits. |
-| [Systematic Equity Trading System](https://github.com/Brianlee7281/Systematic-Equity-Trading-System) | Multi-strategy equity system combining residual momentum and mean reversion with HMM + XGBoost regime detection across a layered research, allocation, risk, and validation architecture. |
-| [EPGP Research](https://github.com/Brianlee7281/EPGP-Research) | Physics-constrained Gaussian-process research for linear PDEs, with a computational-finance application to Black–Scholes pricing. |
+| [PM-BTC](https://github.com/Brianlee7281/PM-BTC) | Research-to-execution system for short-horizon BTC markets. Includes causal event backtests, streaming market-data recorders, volatility/skew/regime signals, post-only execution, risk gates, recovery paths, VPS services, and execution-quality audits. |
+| [Systematic Equity Trading System](https://github.com/Brianlee7281/Systematic-Equity-Trading-System) | Multi-strategy equity system combining residual momentum and mean reversion with HMM + XGBoost regime detection across a layered research, capital-allocation, portfolio-risk, and validation architecture. |
+| [EPGP Research](https://github.com/Brianlee7281/EPGP-Research) | Reimplementation of Gaussian processes constrained by linear PDEs, including heat/wave experiments and a Black–Scholes-to-heat-equation pricing pipeline. |
 
-## Software Engineering
+### Research and engineering themes
 
-| Project | Description |
-|---|---|
-| **Spit** *(in development)* | TypeScript/Canvas 2D game built without an engine. Uses priority-ordered hooks for emergent item combinations, shared entity interfaces, seeded determinism, object pools, spatial-hash collision, spawn budgets, and headless scenario instrumentation. |
-| [PM-BTC](https://github.com/Brianlee7281/PM-BTC) | Event-driven Python system with REST/WebSocket adapters, market-data recorders, signal replay, execution and risk engines, recovery paths, structured reports, tests, and Linux services. |
-| [Laughing Matter Blog](https://github.com/Brianlee7281/laughingmatterblog) | Minimalist blog with an integrated CMS, built with React, Vite, and Tailwind CSS and deployed on Netlify. |
+`point-in-time data` · `walk-forward validation` · `market microstructure` · `Monte Carlo` · `factor models` · `cointegration` · `execution systems` · `portfolio risk`
 
-## Data Science & Machine Learning
+## Machine Learning & Deep Learning Projects
 
 | Project | Description |
 |---|---|
@@ -48,42 +64,29 @@ I build quantitative trading systems, simulation software, and machine-learning 
 | [Power Usage Prediction](https://github.com/Brianlee7281/PowerUsagePrediction) | Electricity-consumption forecasting with a stacking ensemble of Decision Tree, KNN, and Huber Regressor models tuned through Bayesian optimization. |
 | [Loan Status Prediction](https://github.com/Brianlee7281/Loan-Status-Prediction) | Hybrid K-Means + MLP pipeline for loan-approval prediction with SMOTE-based class-imbalance handling. |
 | [Student Retention Prediction](https://github.com/Brianlee7281/StudentCertificatePrediction) | Stacking classifier using Naive Bayes, Decision Tree, and XGBoost with Optuna hyperparameter tuning to identify at-risk students. |
-
-## NLP & Classification
-
-| Project | Description |
-|---|---|
 | [Korean News Classification](https://github.com/Brianlee7281/SW_news_category_classification) | Fine-tuned KoBERT model for categorizing Korean news articles from titles and keywords. |
 | [Spam URL Detection](https://github.com/Brianlee7281/spam_url_classification) | Malicious-URL classifier using TF-IDF feature extraction and a deep neural network with early stopping. |
 
-## How I Build
+### Modeling themes
 
-```text
-research question → data pipeline → model → validation → system integration → monitoring
-```
-
-- **Quant:** point-in-time data, leakage controls, walk-forward validation, costs, fills, drawdowns, and attribution
-- **SWE:** modular interfaces, event-driven systems, deterministic simulation, tests, observability, recovery, and safe defaults
-- **DS / MLE:** reproducible preprocessing, feature engineering, model selection, hyperparameter optimization, calibration, and evaluation
+`time-series forecasting` · `deep learning` · `ensemble learning` · `NLP` · `feature engineering` · `class imbalance` · `Bayesian optimization` · `model evaluation`
 
 ## Tech Stack
 
-**Languages:** Python, TypeScript, JavaScript, SQL
+**Languages:** Python, C++20, TypeScript, JavaScript, SQL
 
-**Quant Finance:** Time Series, Hidden Markov Models, Factor Models, Cointegration, Monte Carlo Simulation, Gaussian Processes, Portfolio Risk
+**Game & Simulation:** SDL3, Canvas 2D, CMake, ImGui, Catch2, fixed-timestep simulation, object pooling, spatial hashing
 
-**ML / DL:** PyTorch, scikit-learn, XGBoost, PyCaret, Optuna, Transformers (KoBERT), LSTM, MLP, Ensemble Learning
+**Trading & Research:** pandas, NumPy, PyTorch, XGBoost, Hidden Markov Models, Gaussian Processes, Monte Carlo, Parquet
 
-**Engineering:** REST APIs, WebSockets, asyncio, pytest, Vite, Canvas 2D, Docker, Linux/systemd, Git
+**ML / DL:** scikit-learn, PyCaret, Optuna, Transformers (KoBERT), LSTM, MLP, ensemble methods
 
-**Data:** pandas, NumPy, Parquet, PostgreSQL, Matplotlib, Seaborn
-
-**Web:** React, Vite, Tailwind CSS, Netlify
+**Systems:** REST APIs, WebSockets, asyncio, pytest, Docker, Linux/systemd, PostgreSQL, Git
 
 ---
 
 <div align="center">
 
-*Interested in quantitative systems, reliable ML, and software that makes models useful.*
+*Building systems where models, simulation, and software meet.*
 
 </div>
