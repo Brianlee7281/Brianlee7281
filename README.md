@@ -27,7 +27,7 @@ I build quantitative trading infrastructure, simulation-heavy games, and machine
 | Project | Description | Stack |
 |---|---|---|
 | [PM-BTC](https://github.com/Brianlee7281/PM-BTC) | Research-to-execution system for short-horizon BTC markets. Includes causal event backtests, streaming market-data recorders, volatility/skew/regime signals, post-only execution, risk gates, recovery paths, VPS services, and execution-quality audits. | `Python` `WebSockets` `Parquet` `pytest` `systemd` |
-| [Systematic Equity Trading System](https://github.com/Brianlee7281/Systematic-Equity-Trading-System) | Multi-strategy equity system combining residual momentum and mean reversion with HMM + XGBoost regime detection across a layered research, capital-allocation, portfolio-risk, and validation architecture. | `Python` `HMM` `XGBoost` `Factor Models` |
+| [Kalshi Soccer Trading Engine](https://github.com/Brianlee7281/Kalshi_Prediction_Soccer) | Real-time soccer prediction-market pricing engine combining XGBoost match priors with a Markov-Modulated Poisson Process, joint likelihood estimation, hybrid analytic/Monte Carlo pricing, event replay, calibration, and position sizing. | `Python` `PyTorch` `XGBoost` `Numba` `Monte Carlo` |
 | [EPGP Research](https://github.com/Brianlee7281/EPGP-Research) | Reimplementation of Gaussian processes constrained by linear PDEs, including heat/wave experiments and a Black–Scholes-to-heat-equation pricing pipeline. | `Python` `Gaussian Processes` `PDEs` `Numerics` |
 
 ## Machine Learning & Deep Learning Projects
