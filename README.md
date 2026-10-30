@@ -18,19 +18,22 @@ Math & Philosophy @ Georgetown (CS minor). I work on the unglamorous half of qua
 ## Featured
 
 ### [Ideological Distribution Dynamics in U.S. Legislatures](https://lauralintheair.github.io/Polarization/) — physics-informed inference of polarization
-First author, with Francesco Caffrey, Nikki Raman, and Xin Li (Georgetown Mathematics & Statistics). Estimates the distribution of legislators' ideology over time from Voteview DW-NOMINATE (U.S. House) and Shor–McCarty (state legislatures) scores via kernel density estimation, then infers the drift and interaction kernel of a nonlinear, nonlocal Fokker–Planck equation that governs how those distributions evolve. The learned law is validated by forecasting later held-out densities without refitting. The results show polarization is not a uniform push to the extremes: attraction and repulsion coexist at different ideological distances.
+First author, with Francesco Caffrey, Nikki Raman, and Xin Li (Georgetown Mathematics & Statistics). Estimates the distribution of legislators' ideology over time from Voteview DW-NOMINATE (U.S. House) and Shor–McCarty (state legislatures) scores via kernel density estimation, then uses a physics-informed neural network to infer the drift and interaction kernel of a nonlinear, nonlocal Fokker–Planck equation that governs how those distributions evolve, enforcing the equation and boundary conditions through the training loss. The learned law is validated by forecasting later held-out densities without refitting. The results show polarization is not a uniform push to the extremes: attraction and repulsion coexist at different ideological distances.
 
 📄 [Project page](https://lauralintheair.github.io/Polarization/) · 💻 [Code repository](https://github.com/LauralintheAir/Polarization)
 
-`Kernel Density Estimation` `Fokker–Planck` `Inverse Problems` `Public Data`
+`Python` `PyTorch` `Physics-Informed Neural Networks` `Automatic Differentiation` `Kernel Density Estimation` `NumPy` `SciPy` `Fokker–Planck` `Inverse Problems`
+
+
+### [EPGP Research](https://github.com/Brianlee7281/EPGP-Research) — Gaussian processes constrained by linear PDEs
+Reimplementation and extension of Ehrenpreis–Palamodov Gaussian Processes (EPGP), from undergraduate research with Prof. Bogdan Raita at Georgetown. Unlike physics-informed neural networks, which only approximately satisfy a PDE by penalizing its residual, EPGP uses the Ehrenpreis–Palamodov principle to build a Gaussian process prior directly on the solution space of a linear, constant-coefficient PDE, so every sample satisfies the equation exactly and learning reduces to fitting a small set of weights by marginal likelihood optimization. It recovers full solutions from sparse, noisy observations, validated against analytical solutions on the heat and 2D wave equations and extended to Maxwell's equations. A Black–Scholes pipeline transforms the pricing PDE into the heat equation, fits from boundary observations alone, and recovers option prices within 0.1% of the analytical solution.
+
+`Python` `PyTorch` `Gaussian Processes` `Bayesian Inference` `Marginal Likelihood Optimization` `Kernel Methods` `NumPy` `SymPy` `PDEs`
 
 ### [Kalshi Soccer Pricing Engine](https://github.com/Brianlee7281/Kalshi_Prediction_Soccer) — calibrated in-play probabilities for soccer markets
 Combines XGBoost pre-match priors with a Markov-modulated Poisson process fitted by joint likelihood, priced through hybrid analytic and Monte Carlo methods. Includes event replay and probability calibration against realized outcomes.
 `Python` `XGBoost` `PyTorch` `Numba` `Monte Carlo`
 
-### [EPGP Research](https://github.com/Brianlee7281/EPGP-Research) — Gaussian processes constrained by linear PDEs
-Learns PDE solutions from sparse, noisy observations with Gaussian processes whose samples satisfy the equation exactly. Heat and wave experiments, plus a Black–Scholes-to-heat-equation pipeline that recovers option prices from boundary data alone.
-`Python` `Gaussian Processes` `PDEs` `Numerics`
 
 ## Machine Learning
 
@@ -50,5 +53,7 @@ Simulation-heavy games in C++20 and TypeScript, built around deterministic fixed
 | Category | Technologies |
 |---|---|
 | **Data** | pandas, NumPy, SQL / PostgreSQL, Parquet, WebSockets, asyncio |
-| **Modeling** | scikit-learn, XGBoost, PyTorch, Gaussian Processes, Hidden Markov Models, Monte Carlo, Optuna |
+| **Machine Learning** | scikit-learn, XGBoost, Optuna, Gaussian Processes, Bayesian inference, kernel density estimation, Hidden Markov Models, Monte Carlo |
+| **Deep Learning** | PyTorch, physics-informed neural networks, automatic differentiation, LSTM, MLP, CNNs (VGG-19), Transformers (KoBERT) |
+| **Scientific Computing** | NumPy, SciPy, SymPy, Numba, PDE solvers |
 | **Engineering** | pytest, Git, Docker, Linux/systemd, C++20, TypeScript |
