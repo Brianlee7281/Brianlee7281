@@ -17,10 +17,6 @@ Math & Philosophy @ Georgetown (CS minor). I work on the unglamorous half of qua
 
 ## Featured
 
-### [PM-BTC](https://github.com/Brianlee7281/PM-BTC) — market-data pipeline and research system for short-horizon BTC markets
-Records live Polymarket and BTC market data over WebSockets into Parquet, aligns asynchronous streams without look-ahead, and evaluates signals with causal, event-driven backtests. Includes volatility, skew, and regime features, risk gates, recovery paths, and execution-quality audits comparing expected with realized fills.
-`Python` `pandas` `Parquet` `WebSockets` `pytest` `systemd`
-
 ### [Kalshi Soccer Pricing Engine](https://github.com/Brianlee7281/Kalshi_Prediction_Soccer) — calibrated in-play probabilities for soccer markets
 Combines XGBoost pre-match priors with a Markov-modulated Poisson process fitted by joint likelihood, priced through hybrid analytic and Monte Carlo methods. Includes event replay and probability calibration against realized outcomes.
 `Python` `XGBoost` `PyTorch` `Numba` `Monte Carlo`
