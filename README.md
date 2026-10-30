@@ -17,6 +17,13 @@ Math & Philosophy @ Georgetown (CS minor). I work on the unglamorous half of qua
 
 ## Featured
 
+### [Ideological Distribution Dynamics in U.S. Legislatures](https://lauralintheair.github.io/Polarization/) — physics-informed inference of polarization
+First author, with Francesco Caffrey, Nikki Raman, and Xin Li (Georgetown Mathematics & Statistics). Estimates the distribution of legislators' ideology over time from Voteview DW-NOMINATE (U.S. House) and Shor–McCarty (state legislatures) scores via kernel density estimation, then infers the drift and interaction kernel of a nonlinear, nonlocal Fokker–Planck equation that governs how those distributions evolve. The learned law is validated by forecasting later held-out densities without refitting. The results show polarization is not a uniform push to the extremes: attraction and repulsion coexist at different ideological distances.
+
+📄 [Project page](https://lauralintheair.github.io/Polarization/) · 💻 [Code repository](https://github.com/LauralintheAir/Polarization)
+
+`Kernel Density Estimation` `Fokker–Planck` `Inverse Problems` `Public Data`
+
 ### [Kalshi Soccer Pricing Engine](https://github.com/Brianlee7281/Kalshi_Prediction_Soccer) — calibrated in-play probabilities for soccer markets
 Combines XGBoost pre-match priors with a Markov-modulated Poisson process fitted by joint likelihood, priced through hybrid analytic and Monte Carlo methods. Includes event replay and probability calibration against realized outcomes.
 `Python` `XGBoost` `PyTorch` `Numba` `Monte Carlo`
