@@ -4,7 +4,7 @@
 
 ### Data Science · Market Data · Probabilistic Modeling
 
-Math & Philosophy @ Georgetown (CS minor). I work on the unglamorous half of quantitative research: collecting messy real-world data, making it causal and trustworthy, and only then asking a model what it says.
+Math & Philosophy @ Georgetown (CS minor)
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](#tech-stack)
 [![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)](#tech-stack)
